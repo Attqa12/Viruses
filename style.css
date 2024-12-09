@@ -1,0 +1,759 @@
+
+/* --------NAVBAR STYLING-------- */
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 20px;
+    color: #f5f5f5;
+    z-index: 100;
+}
+
+.logo {
+    cursor: pointer;
+    font-size: 30px;
+    color: whitesmoke;
+}
+
+.nav-links ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-weight: bold;
+    gap: 35px;
+}
+
+.nav-links ul li {
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: whitesmoke;
+}
+/* ---- X ----- */
+
+
+/* navlinks hover effect */
+.nav-links .hover::after {
+    content: '';
+    width: 0%;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(221, 69, 107);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+.nav-links .hover:hover::after {
+    width: 100%;
+}
+/* ---------x---------- */
+
+/* active navigation link styles */
+#active::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    border-radius: 10px;
+    background: rgb(221, 69, 107);
+    display: block;
+    margin: auto;
+}
+/* ---------x---------- */
+
+/* Mobile Menu Button */
+nav .fa {
+    display: none;
+}
+/* ---------x---------- */
+/* --------------x--------------- */
+
+
+/* ------BANNER STYLING------ */
+.header {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(banner_images/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header {
+    width: 100%;
+    height: 50vh;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url(banner_images/sub-banner.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sub-header-content {
+    margin-top: 9vh;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.sub-header .sub-header-content h1 {
+    font-size: 6vmin;
+}
+
+.sub-header .sub-header-content h2 {
+    font-size: 4.6vmin;
+}
+
+.sub-header .sub-header-content p {
+    font-size: 3vmin;
+}
+
+.sub-header-content .line {
+    width: 100%;
+    height: 4px;
+    background: rgb(221, 69, 107);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content {
+    justify-content: center;
+    color: whitesmoke;
+    text-align: center;
+    padding: 0 10%;
+}
+
+.header-content h1 {
+    font-size: 6vmin;
+}
+
+.header-content .line {
+    width: 40%;
+    height: 4px;
+    background: rgb(221, 69, 107);
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.header-content h2 {
+    font-size: 4.6vmin;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.header-content p {
+    font-size: 3vmin;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.header-content p {
+    font-size: 3vmin;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+/* --------------x--------------- */
+
+
+/* On Scroll Verticaly Navbar styling change */
+nav.sticky {
+    position: fixed;
+    background: whitesmoke;
+    height: 50px;
+    box-shadow: 0px 10px 10px -10px rgba(1, 1, 1, 0.3);
+    transition: all linear .3s;
+}
+
+.sticky .logo {
+    color: black;
+    transition: all linear .3s;
+}
+
+.sticky .nav-links li a {
+    color: black;
+}
+
+.sticky .dropdown-menu {
+    background: whitesmoke;
+    transition: all linear .3s;
+}
+
+.sticky .fa-bars {
+    color: black;
+    transition: all linear .3s;
+}
+/* ---------x---------- */
+
+
+
+/* --------FEEDBACK POPUP STYLES--------- */
+/* Feedback background Styles */
+.feedback-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+}
+
+.feedback-popup-content {
+    background-color: white;
+    padding: 30px;
+    margin: auto 10px;
+    border-radius: 8px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-popup-content h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    text-align: center;
+}
+
+.close-btn {
+    position: fixed;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    color: #888;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    color: #333;
+}
+/* ------x------- */
+
+/* Feedback Form Styles */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.feedback-lbl {
+    display: block;
+}
+
+.feedback-inputs {
+    width: 100%;
+}
+
+#feedback-form button {
+    width: 100%;
+}
+
+#feedback-form textarea {
+    height: 120px;
+}
+/* ------x------ */
+/* ----------------X--------------*/
+
+
+/* ----------- HOME PAGE STYLES ----------- */
+/* Information We Provide Sec */
+.information {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+
+.information h1 {
+    font-size: 36px;
+    font-weight: 600;
+}
+
+.information p {
+    color: #777;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.information-col {
+    flex-basis: 31%;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    transition: 0.5s;
+}
+
+.information-col h3 {
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+
+.information-col:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+/* ---------x-------- */
+
+
+/* Definition Sectiom */
+.definition {
+    width: 80%;
+    margin: auto;
+}
+
+.definition-col {
+    padding: 30px 2px;
+    margin: auto;
+}
+
+.definition-col p {
+    color: #777;
+}
+
+.definition-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* -------x------- */
+/* ----------------X--------------*/
+
+
+/* --------- ABOUT US PAGE -------- */
+.about {
+    width: 85%;
+    margin: auto;
+}
+
+.about-col {
+    padding: 30px 2px;
+    margin: auto;
+    width: 100%;
+}
+
+.about-col img {
+    width: 100%;
+    border-radius: 10px;
+}
+/* -------------X------------- */
+
+
+
+/* --------- TYPES OF VIRUSES -------- */
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 60px auto 40px auto;
+}
+/* ----- x ------ */
+
+
+/* Introduction Section */
+.intro {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: whitesmoke;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.intro h1 {
+    font-size: 2.4rem;
+}
+/* -------- x ------- */
+
+
+/* Types Section */
+.virus-types {
+    background: #ffffff;
+    padding: 20px 20px 50px 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.virus-types h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 6vh;
+}
+
+.type {
+    margin-bottom: 10vh;
+}
+
+.type h3 {
+    color: #333;
+    margin-bottom: 20px;
+    border-bottom: 2px solid rgb(221, 69, 107);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.item {
+    flex: 1 1 calc(33.333% - 20px);
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 8px;
+    padding: 25px;
+    transition: 0.4s;
+}
+
+.item:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+/* ----- x ---- */
+
+
+.item h4 {
+    color: rgb(221, 69, 107);
+    margin-bottom: 10px;
+}
+
+/* Infographic Section */
+.infographic-section {
+    text-align: center;
+    margin: 10vh 0 0 0;
+}
+
+.infographic-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.infographic-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+.infographic-section img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* ---- x ---- */
+
+
+/* Gallery Section */
+.gallery-section {
+    padding: 0 0 6vh 0;
+    text-align: center;
+}
+
+.gallery-section h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.075);
+}
+/* ----- x ---- */
+/* ------------- X ------------ */
+
+
+
+/* ---------- YEAR WISE LISTING PAGE ---------- */
+/* Timeline Section */
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: whitesmoke;
+    border-radius: 10px;
+    margin: 20px 0;
+    padding: 20px;
+    width: 90%;
+    max-width: 900px;
+    transition: 0.4s;
+}
+
+.timeline-item:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-item img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 20px;
+}
+
+.timeline-content {
+    max-width: 60%;
+}
+
+.timeline-content h3 {
+    color: rgb(221, 69, 107);
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.timeline-content p {
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Year Wise Listing Pages */
+.container-ywl {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+   
+}
+
+.box-ywl {
+    background-color: whitesmoke;
+    border-radius: 24px;
+    margin: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: 0.4s;
+}
+
+.box-ywl:hover {
+    box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.2);
+}
+
+.box-ywl h2 {
+    text-align: center;
+    color: #333;
+}
+
+.box-ywl p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.box-ywl ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.box-ywl ul li {
+    color: #555;
+    margin-bottom: 10px;
+}
+/* ---- x --- */
+/* ---------- X ---------- */
+
+
+
+/* ---------- CONTACT US PAGE ---------- */
+/* location Styling */
+.location {
+    width: 80%;
+    margin: auto;
+    padding: 80px 0;
+}
+
+.location iframe {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    border-radius: 10px;
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.location iframe:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.7);
+}
+/* ----- x ----- */
+
+.contact-us {
+    width: 80%;
+    margin: auto;
+}
+
+.contact-col {
+    flex-basis: 48%;
+    margin-bottom: 30px;
+}
+
+.contact-col div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.contact-col div .fa {
+    font-size: 28px;
+    color: rgb(221, 69, 107);
+    margin: 10px;
+    margin-right: 30px;
+}
+
+.contact-col div p {
+    padding: 0;
+}
+
+.contact-col div h5 {
+    font-size: 20px;
+    padding: 0;
+    margin-bottom: 5px;
+    color: #555;
+    font-weight: 400;
+}
+
+.contact-col input, .contact-col textarea {
+    width: 100%;
+    margin-bottom: 17px;
+}
+/* ----------------X-------------- */
+
+
+
+/* ----------FOOTER---------- */
+footer {
+    margin-top: 30px;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+    background: whitesmoke;
+    box-shadow: 0px 10px 10px 10px rgba(1, 1, 1, 0.3);
+}
+
+footer  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+
+footer  .container .sec h2 {
+    color: black;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+footer  .container .sec p {
+    margin-top: 20px;
+    color: #555;
+}
+
+footer  .container .sci {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4,50px);
+}
+
+footer  .container .sci li {
+    list-style: none;
+}
+
+footer  .container .sci li a i {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    color: black;
+    font-size: 20px;
+    transition: 0.3s;
+}
+
+footer  .container .sci li a i:hover {
+    border: 1px solid  rgb(221, 69, 107);
+    background: rgb(221, 69, 107);
+    color: whitesmoke;
+}
+
+footer .container .quicklinks ul li {
+    list-style: none;
+}
+
+footer .container .quicklinks ul {
+    margin-top: 20px;
+}
+
+footer .container .quicklinks ul li a {
+    color: #555;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: inline-block;
+    transition: 0.35s;
+}
+
+footer .container .quicklinks ul li a::after {
+    content: '';
+    width: 0%;
+    height: 2px;
+    border-radius: 10px;
+    background: rgb(221, 69, 107);
+    display: block;
+    margin: auto;
+    transition: 0.3s;
+}
+
+footer .container .quicklinks ul li a:hover::after {
+    width: 100%;
+}
+
+footer .container .quicklinks ul li a:hover {
+    margin-left: 10px;
+}
+
+footer .quicklinks ul li a i {
+    margin-right: 10px;
+}
+
+.copyrightText {
+    width: 100%;
+    background: whitesmoke;
+    padding: 15px 100px;
+    text-align: center;
+    color: #555;
+    border-top: 1px solid rgba(0,0,0,0.15);
+}
+/* ----------------X-------------- */

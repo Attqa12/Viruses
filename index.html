@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virus</title>
+
+    <!-- Full Web CSS Link -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Utility CSS Link -->
+    <link rel="stylesheet" href="utility.css">
+
+    <!-- Responsive CSS Link -->
+    <link rel="stylesheet" href="responsive.css">
+
+    <!-- Google Font Link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav>
+        <a href="index.html">
+            <h1 class="logo">VIRUSES</h1>
+        </a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a id="active" href="index.html">Home</a></li>
+                <li><a class="hover" href="about.html">About Us</a></li>
+                <li><a class="hover" href="types.html">Types of Virus</a></li>
+                <li><a class="hover" href="yearwise.html">Year-Wise Listing</a></li>
+                <li class="underline"><a class="hover" href="contact.html">Contact</a></li>
+                <li><button id="feedback-btn" id="feedback" class="abow">Give Feedback</button></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <!-------- X -------->
+
+
+
+    <!-------- BANNER -------->
+    <header class="header">
+        <div class="header-content">
+            <h1>Welcome to Viruses</h1>
+            <div class="line"></div>
+            <h2>Understanding Viruses:</h2>
+            <p>In a world where viruses have posed significant challenges, knowledge and preparedness are key. Our
+                platform provides detailed and reliable information about various viruses, their impacts, and how to
+                protect yourself. Navigate through the tabs to learn more about viruses, their history, and their
+                preventive measures.</p>
+            <a href="types.html" class="abow">Learn More >></a>
+        </div>
+    </header>
+    <!-------- X -------->
+
+
+
+    <!-------- FEEDBACK POPUP FORM -------->
+    <div id="feedback-popup" class="feedback-popup">
+        <div class="feedback-popup-content">
+            <span id="close-popup" class="close-btn"><i class="fa-solid fa-xmark"></i></span>
+            <h2>We Value Your Feedback!</h2>
+            <form id="feedback-form">
+                <div class="form-group">
+                    <label class="feedback-lbl" for="name">Your Name:</label>
+                    <input class="feedback-input" type="text" id="name" name="name" placeholder="Enter your name"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label class="feedback-lbl" for="email">Your Email:</label>
+                    <input class="feedback-input" type="email" id="email" name="email" placeholder="Enter your email"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label class="feedback-lbl" for="country">Country</label>
+                    <select class="feedback-input" id="country" name="country" required>
+                        <option value="">Select your Country</option>
+                        <option value="Afghanistan">Afghanistan</option>
+                        <option value="Albania">Albania</option>
+                        <option value="Algeria">Algeria</option>
+                        <option value="Andorra">Andorra</option>
+                        <option value="Angola">Angola</option>
+                        <option value="Antigua">Antigua</option>
+                        <option value="Argentina">Argentina</option>
+                        <option value="Armenia">Armenia</option>
+                        <option value="Australia">Australia</option>
+                        <option value="Austria">Austria</option>
+                        <option value="Azerbaijan">Azerbaijan</option>
+                        <option value="Bahamas">Bahamas</option>
+                        <option value="Bahrain">Bahrain</option>
+                        <option value="Bangladesh">Bangladesh</option>
+                        <option value="Barbados">Barbados</option>
+                        <option value="Barbuda">Barbuda</option>
+                        <option value="Belarus">Belarus</option>
+                        <option value="Belgium">Belgium</option>
+                        <option value="Benin">Benin</option>
+                        <option value="Bhutan">Bhutan</option>
+                        <option value="Bolivia">Bolivia</option>
+                        <option value="Bosnia">Bosnia</option>
+                        <option value="Botswana">Botswana</option>
+                        <option value="Brazil">Brazil</option>
+                        <option value="Brunei">Brunei</option>
+                        <option value="Bulgaria">Bulgaria</option>
+                        <option value="Burkina Faso">Burkina Faso</option>
+                        <option value="Burundi">Burundi</option>
+                        <option value="Côte d'Ivoire">Côte d'Ivoire</option>
+                        <option value="Cabo Verde">Cabo Verde</option>
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Cameroon">Cameroon</option>
+                        <option value="Canada">Canada</option>
+                        <option value="Central African Republic">Central African Republic</option>
+                        <option value="Chad">Chad</option>
+                        <option value="Chile">Chile</option>
+                        <option value="China">China</option>
+                        <option value="Comoros">Comoros</option>
+                        <option value="Congo (Congo-Brazzaville)">Congo (Congo-Brazzaville)</option>
+                        <option value="Costa Rica">Costa Rica</option>
+                        <option value="Croatia">Croatia</option>
+                        <option value="Cuba">Cuba</option>
+                        <option value="Cyprus">Cyprus</option>
+                        <option value="Czechia (Czech Republic)">Czechia (Czech Republic)</option>
+                        <option value="Democratic Republic of the Congo">Democratic Republic of the Congo</option>
+                        <option value="Denmark">Denmark</option>
+                        <option value="Djibouti">Djibouti</option>
+                        <option value="Dominica">Dominica</option>
+                        <option value="Dominican Republic">Dominican Republic</option>
+                        <option value="Ecuador">Ecuador</option>
+                        <option value="Egypt">Egypt</option>
+                        <option value="El Salvador">El Salvador</option>
+                        <option value="Equatorial Guinea">Equatorial Guinea</option>
+                        <option value="Eritrea">Eritrea</option>
+                        <option value="Estonia">Estonia</option>
+                        <option value="Eswatini">Eswatini</option>
+                        <option value="Ethiopia">Ethiopia</option>
+                        <option value="Fiji">Fiji</option>
+                        <option value="Finland">Finland</option>
+                        <option value="France">France</option>
+                        <option value="Gabon">Gabon</option>
+                        <option value="Gambia">Gambia</option>
+                        <option value="Georgia">Georgia</option>
+                        <option value="Germany">Germany</option>
+                        <option value="Ghana">Ghana</option>
+                        <option value="Greece">Greece</option>
+                        <option value="Grenada">Grenada</option>
+                        <option value="Guatemala">Guatemala</option>
+                        <option value="Guinea">Guinea</option>
+                        <option value="Guinea-Bissau">Guinea-Bissau</option>
+                        <option value="Guyana">Guyana</option>
+                        <option value="Haiti">Haiti</option>
+                        <option value="Holy See">Holy See</option>
+                        <option value="Honduras">Honduras</option>
+                        <option value="Hungary">Hungary</option>
+                        <option value="Iceland">Iceland</option>
+                        <option value="India">India</option>
+                        <option value="Indonesia">Indonesia</option>
+                        <option value="Iran">Iran</option>
+                        <option value="Iraq">Iraq</option>
+                        <option value="Ireland">Ireland</option>
+                        <option value="Israel">Israel</option>
+                        <option value="Italy">Italy</option>
+                        <option value="Jamaica">Jamaica</option>
+                        <option value="Japan">Japan</option>
+                        <option value="Jordan">Jordan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kenya">Kenya</option>
+                        <option value="Kiribati">Kiribati</option>
+                        <option value="Kuwait">Kuwait</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Laos">Laos</option>
+                        <option value="Latvia">Latvia</option>
+                        <option value="Lebanon">Lebanon</option>
+                        <option value="Lesotho">Lesotho</option>
+                        <option value="Liberia">Liberia</option>
+                        <option value="Libya">Libya</option>
+                        <option value="Liechtenstein">Liechtenstein</option>
+                        <option value="Lithuania">Lithuania</option>
+                        <option value="Luxembourg">Luxembourg</option>
+                        <option value="Madagascar">Madagascar</option>
+                        <option value="Malawi">Malawi</option>
+                        <option value="Malaysia">Malaysia</option>
+                        <option value="Maldives">Maldives</option>
+                        <option value="Mali">Mali</option>
+                        <option value="Malta">Malta</option>
+                        <option value="Marshall Islands">Marshall Islands</option>
+                        <option value="Mauritania">Mauritania</option>
+                        <option value="Mauritius">Mauritius</option>
+                        <option value="Mexico">Mexico</option>
+                        <option value="Micronesia">Micronesia</option>
+                        <option value="Moldova">Moldova</option>
+                        <option value="Monaco">Monaco</option>
+                        <option value="Mongolia">Mongolia</option>
+                        <option value="Montenegro">Montenegro</option>
+                        <option value="Morocco">Morocco</option>
+                        <option value="Mozambique">Mozambique</option>
+                        <option value="Myanmar">Myanmar</option>
+                        <option value="Namibia">Namibia</option>
+                        <option value="Nauru">Nauru</option>
+                        <option value="Nepal">Nepal</option>
+                        <option value="Netherlands">Netherlands</option>
+                        <option value="New Zealand">New Zealand</option>
+                        <option value="Nicaragua">Nicaragua</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Nigeria">Nigeria</option>
+                        <option value="North Korea">North Korea</option>
+                        <option value="North Macedonia">North Macedonia</option>
+                        <option value="Norway">Norway</option>
+                        <option value="Oman">Oman</option>
+                        <option value="Pakistan">Pakistan</option>
+                        <option value="Palau">Palau</option>
+                        <option value="Palestine State">Palestine State</option>
+                        <option value="Panama">Panama</option>
+                        <option value="Papua New Guinea">Papua New Guinea</option>
+                        <option value="Paraguay">Paraguay</option>
+                        <option value="Peru">Peru</option>
+                        <option value="Philippines">Philippines</option>
+                        <option value="Poland">Poland</option>
+                        <option value="Portugal">Portugal</option>
+                        <option value="Qatar">Qatar</option>
+                        <option value="Romania">Romania</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Rwanda">Rwanda</option>
+                        <option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+                        <option value="Saint Lucia">Saint Lucia</option>
+                        <option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+                        <option value="Samoa">Samoa</option>
+                        <option value="San Marino">San Marino</option>
+                        <option value="Sao Tome and Principe">Sao Tome and Principe</option>
+                        <option value="Saudi Arabia">Saudi Arabia</option>
+                        <option value="Senegal">Senegal</option>
+                        <option value="Serbia">Serbia</option>
+                        <option value="Seychelles">Seychelles</option>
+                        <option value="Sierra Leone">Sierra Leone</option>
+                        <option value="Singapore">Singapore</option>
+                        <option value="Slovakia">Slovakia</option>
+                        <option value="Slovenia">Slovenia</option>
+                        <option value="Solomon Islands">Solomon Islands</option>
+                        <option value="Somalia">Somalia</option>
+                        <option value="South Africa">South Africa</option>
+                        <option value="South Korea">South Korea</option>
+                        <option value="South Sudan">South Sudan</option>
+                        <option value="Spain">Spain</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                        <option value="Sudan">Sudan</option>
+                        <option value="Suriname">Suriname</option>
+                        <option value="Sweden">Sweden</option>
+                        <option value="Switzerland">Switzerland</option>
+                        <option value="Syria">Syria</option>
+                        <option value="Tajikistan">Tajikistan</option>
+                        <option value="Tanzania">Tanzania</option>
+                        <option value="Thailand">Thailand</option>
+                        <option value="Timor-Leste">Timor-Leste</option>
+                        <option value="Togo">Togo</option>
+                        <option value="Tonga">Tonga</option>
+                        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+                        <option value="Tunisia">Tunisia</option>
+                        <option value="Turkey">Turkey</option>
+                        <option value="Turkmenistan">Turkmenistan</option>
+                        <option value="Tuvalu">Tuvalu</option>
+                        <option value="Uganda">Uganda</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="United Arab Emirates">United Arab Emirates</option>
+                        <option value="United Kingdom">United Kingdom</option>
+                        <option value="United States of America">United States of America</option>
+                        <option value="Uruguay">Uruguay</option>
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Vanuatu">Vanuatu</option>
+                        <option value="Vietnam">Vietnam</option>
+                        <option value="Yemen">Yemen</option>
+                        <option value="Zambia">Zambia</option>
+                        <option value="Zimbabwe">Zimbabwe</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label class="feedback-lbl" for="feedback">Your Feedback:</label>
+                    <textarea class="feedback-input" id="feedback" name="feedback" placeholder="Enter your feedback"
+                        required></textarea>
+                </div>
+                <button type="submit" class="abow">Submit Feedback</button>
+            </form>
+        </div>
+    </div>
+    <!-------- X -------->
+
+
+
+    <!-------- Information We Provide Sec -------->
+    <section class="information">
+        <h1>Information We Provide</h1>
+        <p>We are committed to providing reliable, up-to-date, and easy-to-understand information on viruses to help
+            individuals, healthcare professionals, and organizations better understand, prevent, and respond to viral
+            threats. Our goal is to raise awareness, promote prevention, and offer support in the fight against viral
+            diseases. Here's what we cover:</p>
+        <div class="row">
+            <div class="information-col">
+                <h3>Types of Viruses</h3>
+                <p>We provide comprehensive information on the most common and significant viruses that impact global
+                    health, including: Airborne Viruses, Bloodborne Viruses, Waterborne Viruses etc</p>
+            </div>
+            <div class="information-col">
+                <h3>Year-Wise Listings</h3>
+                <p>Our Year-Wise Listing highlights major viral outbreaks throughout history, from the 1918 Spanish Flu,
+                    which caused millions of deaths worldwide, to the 2020 COVID-19 pandemic, which disrupted global
+                    economies and healthcare systems.</p>
+            </div>
+            <div class="information-col">
+                <h3>Historical Virus Impact</h3>
+                <p>We provide a year-by-year breakdown of the most significant viral outbreaks in history, highlighting
+                    the timeline of major pandemics like the Spanish Flu, HIV/AIDS, and the COVID-19 pandemic.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-------- Definition of Viruses -------->
+    <section class="definition">
+        <div class="row">
+            <div class="definition-col">
+                <h1>What Are Viruses?</h1>
+                <p>A <b>virus</b> is a microscopic infectious agent that can only replicate within the living cells of a
+                    host
+                    organism. They are not considered "alive" in the traditional sense, as they cannot carry out the
+                    biological
+                    processes required for reproduction, energy production, or metabolism on their own. Instead, viruses
+                    hijack
+                    the machinery of a host cell to reproduce and create more virus particles (virions).</p>
+            </div>
+            <div class="definition-col">
+                <img src="banner_images/definition.jpg" alt="">
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-------- Footer -------->
+    <footer>
+        <div class="container">
+            <div class="sec aboutus">
+                <h2>About Us</h2>
+                <p>The Virus is dedicated to providing accurate and comprehensive
+                    information about viruses. Our goal is to educate, raise awareness, and promote safety by offering
+                    insights into virus types, historical outbreaks, and preventive measures. Stay informed and
+                    empowered with trusted knowledge.</p>
+                <ul class="sci">
+                    <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                    <li><a href=""><i class="fa-brands fa-whatsapp"></i></a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Quick Links</h2>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="types.html">Types of Viruses</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Support</h2>
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="#">Feedback</a></li>
+                    <li><a href="contact.html">Our Location</a></li>
+                </ul>
+            </div>
+            <div class="sec quicklinks">
+                <h2>Contact Us</h2>
+                <ul>
+                    <li><a href=""><i class="fa fa-phone"></i>+92 30123456789</a></li>
+                    <li><a href=""><i class="fa fa-envelope"></i>info@viruses.com</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <div class="copyrightText">
+        <p>Copyright © 2024 Vertex Systems. All Rights Reserved.</p>
+    </div>
+
+
+    <!-- Link To Js -->
+    <script type="text/javascript" src="script.js"></script>
+    <!-------- X -------->
+
+</body>
+
+</html>

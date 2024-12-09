@@ -1,0 +1,72 @@
+/* General styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* Body & Layout */
+html, body {
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* For All Ancor Tags */
+a {
+    text-decoration: none;
+    /* color: whitesmoke; */
+}
+
+/* All the Buttons of Website */
+.abow {
+    padding: 8px 15px;
+    background: rgb(221, 69, 107);
+    color: whitesmoke;
+    border-radius: 5px;
+    border: none;
+    font-weight: bolder;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* All the Buttons of Website Hover Effect */
+.abow:hover {
+    color: rgb(221, 69, 107);
+    background: whitesmoke;
+    /* outline: 1px solid rgb(221, 69, 107); */
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* All Labels CSS */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* All Input Field CSS */
+input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    font-size: 14px;
+}
+
+/* All Input Field CSS Focus */
+input:focus, select:focus,  textarea:focus {
+    border-color: rgb(221, 69, 107);
+}
+
+/* All Rows CSS */
+.row {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+
